@@ -1,7 +1,7 @@
 -- original code comes from walkin_light mod by Echo http://minetest.net/forum/viewtopic.php?id=2621
 
-local flashlight_max_charge=30000
-technic.register_power_tool ("technic:flashlight",flashlight_max_charge)
+local flashlight_max_charge = 30000
+technic.register_power_tool("technic:flashlight", flashlight_max_charge)
       
 minetest.register_tool("technic:flashlight", {
 	description = "Flashlight",
@@ -14,9 +14,9 @@ minetest.register_tool("technic:flashlight", {
 minetest.register_craft({
 output = "technic:flashlight",
 recipe = {
-	{"technic:rubber","glass","technic:rubber"},
-	{"technic:stainless_steel_ingot","technic:battery","technic:stainless_steel_ingot"},
-	{"","technic:battery",""}
+		{"technic:rubber",                "glass",           "technic:rubber"},
+		{"technic:stainless_steel_ingot", "technic:battery", "technic:stainless_steel_ingot"},
+		{"",                              "technic:battery", ""}
 	}
 })
 
@@ -160,7 +160,7 @@ local hotbar=inv:get_list("main")
 			if meta["charge"]==nil then return false end
 			charge=meta["charge"]
 			if charge-2>0 then
-			 charge =charge-2;	
+			 charge =charge-2;
 			technic.set_RE_wear(item,charge,flashlight_max_charge)
 			meta["charge"]=charge
 			item["metadata"]=set_item_meta(meta)

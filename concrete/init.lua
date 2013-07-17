@@ -82,12 +82,9 @@ minetest.register_craftitem(":technic:concrete_post_platform", {
 minetest.register_node(":technic:concrete", {
 	description = "Concrete Block",
 	tile_images = {"technic_concrete_block.png",},
-	is_ground_content = true,
 	groups={cracky=1,level=2},
 	sounds = default.node_sound_stone_defaults(),
 	paramtype = "light",
-	light_source = 0,
-	sunlight_propagates = true,
 	on_construct = function(pos)
 		meta=minetest.env:get_meta(pos)
 		meta:set_float("postlike",1)
@@ -101,12 +98,8 @@ minetest.register_node(":technic:concrete", {
 minetest.register_node(":technic:blast_resistant_concrete", {
 	description = "Blast-resistant Concrete Block",
 	tile_images = {"technic_blast_resistant_concrete_block.png",},
-	is_ground_content = true,
 	groups={cracky=1,level=3},
 	sounds = default.node_sound_stone_defaults(),
-	paramtype = "light",
-	light_source = 0,
-	sunlight_propagates = true,
 	on_construct = function(pos)
 		meta=minetest.env:get_meta(pos)
 		meta:set_float("postlike",1)
@@ -120,12 +113,9 @@ minetest.register_node(":technic:blast_resistant_concrete", {
 minetest.register_node(":technic:concrete_post_platform", {
 	description = "Concrete Post Platform",
 	tile_images = {"technic_concrete_block.png",},
-	is_ground_content = true,
 	groups={cracky=1,level=2},
 	sounds = default.node_sound_stone_defaults(),
 	paramtype = "light",
-	light_source = 0,
-	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
 		type = "fixed",
@@ -167,7 +157,6 @@ minetest.register_node(":technic:concrete_post", {
 	groups={cracky=1,level=2,concrete_post=1},
 	sounds = default.node_sound_stone_defaults(),
 	paramtype = "light",
-	light_source = 0,
 	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
@@ -218,7 +207,6 @@ minetest.register_node(":technic:concrete_post"..count, {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "technic:concrete_post",
 	paramtype = "light",
-	light_source = 0,
 	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
@@ -246,7 +234,6 @@ minetest.register_node(":technic:concrete_post"..count+16, {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "technic:concrete_post_platform",
 	paramtype = "light",
-	light_source = 0,
 	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
@@ -275,7 +262,6 @@ minetest.register_node(":technic:concrete_post32", {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "technic:concrete_post",
 	paramtype = "light",
-	light_source = 0,
 	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
@@ -299,7 +285,6 @@ minetest.register_node(":technic:concrete_post33", {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "technic:concrete_post",
 	paramtype = "light",
-	light_source = 0,
 	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
@@ -325,7 +310,6 @@ minetest.register_node(":technic:concrete_post34", {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "technic:concrete_post_platform",
 	paramtype = "light",
-	light_source = 0,
 	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
@@ -350,7 +334,6 @@ minetest.register_node(":technic:concrete_post35", {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "technic:concrete_post_platform",
 	paramtype = "light",
-	light_source = 0,
 	sunlight_propagates = true,
 	drawtype = "nodebox", 
 	selection_box = {
